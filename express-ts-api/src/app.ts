@@ -9,11 +9,6 @@ interface Dog {
   birth_date: Date | null;
 }
 
-// app.get<Params, ResBody, ReqBody, ReqQuery, Locals>(
-//   '/api/v1/dogs',
-//   (req, res) => {}
-// );
-
 app.get<
   {},
   { data: Dog[]; message: string },
